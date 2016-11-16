@@ -1,8 +1,8 @@
 //
-//  ${POD_NAME}.h
+//  ${POD_NAME}.m
 //  Pods
 //
-//  Created by ${USER_NAME} on ${YEAR}.
+//  Created by ${USER_NAME} on ${DATE}.
 //
 //
 

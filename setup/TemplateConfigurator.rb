@@ -181,8 +181,6 @@ module Pod
       File.rename(podModule_path + "/NAME.m", podModule_path + "/" + @pod_name + '.m')
     end
 
-    def
-
     def reinitialize_git_repo
       `rm -rf .git`
       `git init`

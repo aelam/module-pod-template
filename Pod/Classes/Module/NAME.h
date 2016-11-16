@@ -2,7 +2,7 @@
 //  ${POD_NAME}.h
 //  Pods
 //
-//  Created by ${USER_NAME} on ${YEAR}.
+//  Created by ${USER_NAME} on ${DATE}.
 //
 //
 
