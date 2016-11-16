@@ -22,7 +22,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9F375E371DDC08BE00CA1F8B /* EMAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F375E331DDC08BE00CA1F8B /* EMAppSettings.m */; };
-		9F375E381DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F375E361DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +59,6 @@
 		9F375E321DDC08BE00CA1F8B /* EMAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAppSettings.h; sourceTree = "<group>"; };
 		9F375E331DDC08BE00CA1F8B /* EMAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAppSettings.m; sourceTree = "<group>"; };
 		9F375E341DDC08BE00CA1F8B /* EMSettingsCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingsCondition.h; sourceTree = "<group>"; };
-		9F375E351DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSocialEMStockConfigurator.h; sourceTree = "<group>"; };
-		9F375E361DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSocialEMStockConfigurator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +176,6 @@
 				9F375E321DDC08BE00CA1F8B /* EMAppSettings.h */,
 				9F375E331DDC08BE00CA1F8B /* EMAppSettings.m */,
 				9F375E341DDC08BE00CA1F8B /* EMSettingsCondition.h */,
-				9F375E351DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.h */,
-				9F375E361DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m */,
 			);
 			path = MSDefaultSettings;
 			sourceTree = "<group>";
@@ -287,7 +282,6 @@
 				6003F5A7195388D20070C39A /* CPDViewController.m in Sources */,
 				9F375E371DDC08BE00CA1F8B /* EMAppSettings.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				9F375E381DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
