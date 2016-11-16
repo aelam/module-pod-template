@@ -7,10 +7,8 @@
 //
 
 #import "CPDAppDelegate.h"
-#import <MSThemeKit/MSThemeKit.h>
 #import <MSAppModuleKit/MSAppModuleKit.h>
 #import "EMAppSettings.h"
-#import <MSAppModuleWebApp/MSAppModuleWebApp.h>
 
 @implementation CPDAppDelegate
 
@@ -23,35 +21,33 @@
 - (void)setupModule {
     //
     [MSActiveControllerFinder setFinder:[MSActiveControllerFinder new]];
-    
+
     /* 读取系统配置 */
     EMAppSettings *appSettings = [EMAppSettings appSettings];
     /* 初始化appModuleController 并加载设置进去 */
     [MSAppModuleController appModuleControllerWithSettings:appSettings];
-    [appModuleManager addModule:[MSAppModuleWebApp new]];
 }
 
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
     [[UIApplication sharedApplication] registerForRemoteNotifications];
-    
+
     [appModuleManager applicationDidRegisterUserNotificationSettings:notificationSettings];
-    
+
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     [appModuleManager applicationDidReceiveRemoteNotification:userInfo];
-    saveDebugLog([NSString stringWithFormat:@"push = %@", userInfo]);
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken {
     NSLog(@"devToken = %@", devToken);
-    
+
     [appModuleManager applicationDidRegisterForRemoteNotificationsWithDeviceToken:devToken];
 }
 
 - (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
     [appModuleManager applicationDidFailToRegisterForRemoteNotificationsWithError:err];
-    
+
     NSLog(@"didFailToRegisterForRemoteNotificationsWithError:%@", [NSString stringWithFormat:@"Error: %@", err]);
 }
 

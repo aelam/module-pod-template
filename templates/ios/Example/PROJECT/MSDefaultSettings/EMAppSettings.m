@@ -7,7 +7,6 @@
 //
 
 #import "EMAppSettings.h"
-#import "EMSocialEMStockConfigurator.h"
 
 #define kPlatformID         9           // iphone平台号
 #define kProductID          15          // 产品号
@@ -109,6 +108,3 @@ NSString *DefaultVendorConfig();
 }
 
 @end
-
-
-
