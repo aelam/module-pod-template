@@ -84,6 +84,7 @@ module Pod
       rename_template_files
       add_pods_to_podfile
       customise_prefix
+      rename_module_filename
       rename_classes_folder
       ensure_carthage_compatibility
       reinitialize_git_repo
@@ -117,7 +118,7 @@ module Pod
     end
 
     def replace_variables_in_files
-      file_names = ['POD_LICENSE', 'POD_README.md', 'NAME.podspec', '.travis.yml', podfile_path]
+      file_names = ['POD_LICENSE', 'POD_README.md', 'NAME.podspec', '.travis.yml', podfile_path, podModule_path+'/NAME.h', podModule_path+'/NAME.m']
       file_names.each do |file_name|
         text = File.read(file_name)
         text.gsub!("${POD_NAME}", @pod_name)
@@ -175,6 +176,13 @@ module Pod
       FileUtils.mv "Pod", @pod_name
     end
 
+    def rename_module_filename
+      File.rename(podModule_path + "/NAME.h", podModule_path + "/" + @pod_name + '.h')
+      File.rename(podModule_path + "/NAME.m", podModule_path + "/" + @pod_name + '.m')
+    end
+
+    def
+
     def reinitialize_git_repo
       `rm -rf .git`
       `git init`
@@ -205,6 +213,10 @@ module Pod
 
     def podfile_path
       'Example/Podfile'
+    end
+
+    def podModule_path
+      'Pod/Classes/Module'
     end
 
     #----------------------------------------#

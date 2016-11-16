@@ -21,6 +21,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9F375E371DDC08BE00CA1F8B /* EMAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F375E331DDC08BE00CA1F8B /* EMAppSettings.m */; };
+		9F375E381DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F375E361DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,7 @@
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = "PROJECT";
+			remoteInfo = PROJECT;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,6 +56,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9F375E311DDC08BE00CA1F8B /* EMAppBaseInfoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAppBaseInfoSettings.h; sourceTree = "<group>"; };
+		9F375E321DDC08BE00CA1F8B /* EMAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAppSettings.h; sourceTree = "<group>"; };
+		9F375E331DDC08BE00CA1F8B /* EMAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAppSettings.m; sourceTree = "<group>"; };
+		9F375E341DDC08BE00CA1F8B /* EMSettingsCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingsCondition.h; sourceTree = "<group>"; };
+		9F375E351DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSocialEMStockConfigurator.h; sourceTree = "<group>"; };
+		9F375E361DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSocialEMStockConfigurator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +127,12 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CPDViewController.h */,
 				6003F5A6195388D20070C39A /* CPDViewController.m */,
+				9F375E301DDC08BE00CA1F8B /* MSDefaultSettings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for PROJECT";
-			path = "PROJECT";
+			path = PROJECT;
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
@@ -163,6 +172,19 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		9F375E301DDC08BE00CA1F8B /* MSDefaultSettings */ = {
+			isa = PBXGroup;
+			children = (
+				9F375E311DDC08BE00CA1F8B /* EMAppBaseInfoSettings.h */,
+				9F375E321DDC08BE00CA1F8B /* EMAppSettings.h */,
+				9F375E331DDC08BE00CA1F8B /* EMAppSettings.m */,
+				9F375E341DDC08BE00CA1F8B /* EMSettingsCondition.h */,
+				9F375E351DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.h */,
+				9F375E361DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m */,
+			);
+			path = MSDefaultSettings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,8 +200,8 @@
 			);
 			dependencies = (
 			);
-			name = "PROJECT_Example";
-			productName = "PROJECT";
+			name = PROJECT_Example;
+			productName = PROJECT;
 			productReference = 6003F58A195388D20070C39A /* PROJECT_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -196,8 +218,8 @@
 			dependencies = (
 				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
-			name = "PROJECT_Tests";
-			productName = "PROJECTTests";
+			name = PROJECT_Tests;
+			productName = PROJECTTests;
 			productReference = 6003F5AE195388D20070C39A /* PROJECT_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -209,7 +231,7 @@
 			attributes = {
 				CLASSPREFIX = CPD;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "PROJECT_OWNER";
+				ORGANIZATIONNAME = PROJECT_OWNER;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -263,7 +285,9 @@
 			files = (
 				6003F59E195388D20070C39A /* CPDAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CPDViewController.m in Sources */,
+				9F375E371DDC08BE00CA1F8B /* EMAppSettings.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9F375E381DDC08BE00CA1F8B /* EMSocialEMStockConfigurator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
