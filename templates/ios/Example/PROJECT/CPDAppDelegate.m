@@ -26,6 +26,8 @@
     EMAppSettings *appSettings = [EMAppSettings appSettings];
     /* 初始化appModuleController 并加载设置进去 */
     [MSAppModuleController appModuleControllerWithSettings:appSettings];
+    [appModuleManager addModule:[PROJECT new]];
+
 }
 
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
