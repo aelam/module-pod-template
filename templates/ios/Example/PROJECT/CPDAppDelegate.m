@@ -8,6 +8,7 @@
 
 #import "CPDAppDelegate.h"
 #import <MSAppModuleKit/MSAppModuleKit.h>
+#import <PROJECT/PROJECT.h>
 #import "EMAppSettings.h"
 
 @implementation CPDAppDelegate
