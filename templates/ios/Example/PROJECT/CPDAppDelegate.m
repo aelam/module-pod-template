@@ -10,6 +10,7 @@
 #import <MSAppModuleKit/MSAppModuleKit.h>
 #import <PROJECT/PROJECT.h>
 #import "EMAppSettings.h"
+#import <MSRoutes/MSActiveControllerFinder.h>
 
 @implementation CPDAppDelegate
 
